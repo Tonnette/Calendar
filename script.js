@@ -1,5 +1,24 @@
 $(document).ready(function() {
 
+    
+
+   console.log(moment());
+
+   var m = moment();
+console.log(m.format("L"));
+//    console.log(m.format("dddd MMM Mo YYYY"))
+console.log(`toString() => ${m.toString()}`);
+
+var timeString = (`toString() => ${m.toString()}`);
+
+function update() {
+    $(".currentTime").html(moment().format('HH:mm:ss'));
+}
+
+update();
+
+
+var timeBox = document.querySelector("mySingleContainer");
     var newUserInput1 = document.querySelector(".userInput1");
     var newUserInput2 = document.querySelector(".userInput2");
     var newUserInput3 = document.querySelector(".userInput3");
