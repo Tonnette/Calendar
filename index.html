@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Work Day Scheduler</title>
+</head>
+
+<body>
+    <header class="jumbotron myHeader">
+        <h1 class="display-3">Work Day Scheduler</h1>
+        <p class="lead">A simple calendar app for scheduling your work day</p>
+        <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container mySingleContainer container-1">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 myTime">
+                <p class="timePara" value="1">Time: 0</p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 myClass">
+                <div class="form-group">
+                    <textarea class="form-control userInput1" value="1" id="exampleFormControlTextarea4" id="userInput" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 mySave">
+                <button type="button" class="btn btn-primary mySaveButton" value="1">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="container mySingleContainer container-2">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 myTime">
+                <p class="timePara" value="2">Time: 1</p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 myClass">
+                <div class="form-group">
+                    <textarea class="form-control userInput2" value="2" id="exampleFormControlTextarea4" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 mySave">
+                <button type="button" class="btn btn-primary mySaveButton" value="2">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="container mySingleContainer container-3">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 myTime">
+                <p class="timePara" value="3">Time: </p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 myClass">
+                <div class="form-group">
+                    <textarea class="form-control userInput3" value="3" id="exampleFormControlTextarea4" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 mySave">
+                <button type="button" class="btn btn-primary mySaveButton" value="3">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="container mySingleContainer container-4">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 myTime">
+                <p class="timePara" value="4">Time: 0</p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 myClass">
+                <div class="form-group">
+                    <textarea class="form-control userInput4" value="4" id="exampleFormControlTextarea4" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 mySave">
+                <button type="button" class="btn btn-primary mySaveButton" value="4">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="container mySingleContainer container-5">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 myTime">
+                <p class="timePara" value="5">Time: 0</p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 myClass">
+                <div class="form-group">
+                    <textarea class="form-control userInput5" value="5" id="exampleFormControlTextarea4" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 mySave">
+                <button type="button" class="btn btn-primary mySaveButton" value="5">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="container mySingleContainer container-6">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 myTime">
+                <p class="timePara" value="6">Time: 0</p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 myClass">
+                <div class="form-group">
+                    <textarea class="form-control userInput6" value="6" id="exampleFormControlTextarea4" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 mySave">
+                <button type="button" class="btn btn-primary mySaveButton" value="6">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="container mySingleContainer container-7">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 myTime">
+                <p class="timePara" value="7">Time: 0</p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 myClass">
+                <div class="form-group">
+                    <textarea class="form-control userInput7" value="7" id="exampleFormControlTextarea4" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 mySave">
+                <button type="button" class="btn btn-primary mySaveButton" value="7">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="container mySingleContainer container-8">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 myTime">
+                <p class="timePara" value="8">Time: 0</p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 myClass">
+                <div class="form-group">
+                    <textarea class="form-control userInput8" value="8" id="exampleFormControlTextarea4" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 mySave">
+                <button type="button" class="btn btn-primary mySaveButton" value="8">Save</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</body>
+
+</html>
