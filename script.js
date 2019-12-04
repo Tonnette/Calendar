@@ -1,36 +1,73 @@
 $(document).ready(function() {
 
 
-    // var m = moment();
+    var m = moment();
 
     var clock = document.querySelector("#clock");
 
     function updateTime() {
         var now = moment();
         var humanReadable = now.format('hh:mm:ssa');
-        console.log(humanReadable);
         clock.textContent = humanReadable;
     }
     setInterval(updateTime, 1000);
     updateTime();
 
+    var timeIdArray = [m.format('09:00'), m.format('10:00'), m.format('11:00'), m.format('12:00'),
+        m.format('13:00'), m.format('14:00'), m.format('15:00'), m.format('16:00'), m.format('17:00')
+    ];
 
+    currentHour = m.hour();
 
+    console.log(currentHour);
 
+    if (currentHour === 9) {
+        $(".userInput1").css('background-color', 'green');
+    } else if (currentHour === 10) {
+        $(".userInput2").css('background-color', 'green');
+        $(".userInput1").css('background-color', 'red');
+    } else if (currentHour === 11) {
+        $(".userInput3").css('background-color', 'green');
+        $(".userInput2").css('background-color', 'red');
+        $(".userInput1").css('background-color', 'red');
+    } else if (currentHour === 12) {
+        $(".userInput4").css('background-color', 'green');
+        $(".userInput3").css('background-color', 'red');
+        $(".userInput2").css('background-color', 'red');
+        $(".userInput1").css('background-color', 'red');
+    } else if (currentHour === 13) {
+        $(".userInput5").css('background-color', 'green');
+        $(".userInput4").css('background-color', 'red');
+        $(".userInput3").css('background-color', 'red');
+        $(".userInput2").css('background-color', 'red');
+        $(".userInput1").css('background-color', 'red');
+    } else if (currentHour === 14) {
+        $(".userInput6").css('background-color', 'green');
+        $(".userInput5").css('background-color', 'red');
+        $(".userInput4").css('background-color', 'red');
+        $(".userInput3").css('background-color', 'red');
+        $(".userInput2").css('background-color', 'red');
+        $(".userInput1").css('background-color', 'red');
+    } else if (currentHour === 15) {
+        $(".userInput7").css('background-color', 'green');
+        $(".userInput6").css('background-color', 'red');
+        $(".userInput5").css('background-color', 'red');
+        $(".userInput4").css('background-color', 'red');
+        $(".userInput3").css('background-color', 'red');
+        $(".userInput2").css('background-color', 'red');
+        $(".userInput1").css('background-color', 'red');
+    } else if (currentHour === 16) {
+        $(".userInput8").css('background-color', 'green');
+        $(".userInput7").css('background-color', 'red');
+        $(".userInput6").css('background-color', 'red');
+        $(".userInput5").css('background-color', 'red');
+        $(".userInput4").css('background-color', 'red');
+        $(".userInput3").css('background-color', 'red');
+        $(".userInput2").css('background-color', 'red');
+        $(".userInput1").css('background-color', 'red');
+    }
 
-    // console.log(m.format("L"));
-    // //    console.log(m.format("dddd MMM Mo YYYY"))
-    // console.log(`toString() => ${m.toString()}`);
-
-    // var timeString = (`toString() => ${m.toString()}`);
-
-    // function update() {
-    //     $(".currentTime").html(moment().format('HH:mm:ss'));
-    // }
-
-    // update();
-
-
+    // setActiveColor();
     var timeBox = document.querySelector("mySingleContainer");
     var newUserInput1 = document.querySelector(".userInput1");
     var newUserInput2 = document.querySelector(".userInput2");
@@ -40,7 +77,6 @@ $(document).ready(function() {
     var newUserInput6 = document.querySelector(".userInput6");
     var newUserInput7 = document.querySelector(".userInput7");
     var newUserInput8 = document.querySelector(".userInput8");
-
 
     // When user reloads a page:
     // get items out of local storage
@@ -52,7 +88,6 @@ $(document).ready(function() {
     var lastuser6 = localStorage.getItem("userTypedBox6");
     var lastuser7 = localStorage.getItem("userTypedBox7");
     var lastuser8 = localStorage.getItem("userTypedBox8");
-
 
     // put them into each textbox
     newUserInput1.textContent = lastuser1;
@@ -107,9 +142,6 @@ $(document).ready(function() {
             localStorage.setItem("userTypedBox8", userTypedBox8);
 
         }
-
-
-
 
     });
 
