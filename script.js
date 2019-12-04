@@ -7,8 +7,8 @@ $(document).ready(function() {
 
     function updateTime() {
         var now = moment();
-        var humanReadable = now.format('hh:mm:ssa');
-        clock.textContent = humanReadable;
+        var readableTime = now.format('MMMM Do YYYY, h:mm:ss a');
+        clock.textContent = readableTime;
     }
     setInterval(updateTime, 1000);
     updateTime();
@@ -21,51 +21,60 @@ $(document).ready(function() {
 
     console.log(currentHour);
 
-    if (currentHour === 9) {
-        $(".userInput1").css('background-color', '#FF1493');
-    } else if (currentHour === 10) {
-        $(".userInput2").css('background-color', 'lightgrey');
-        $(".userInput1").css('background-color', 'lightgrey');
-    } else if (currentHour === 11) {
-        $(".userInput3").css('background-color', '#FF1493');
-        $(".userInput2").css('background-color', 'lightgrey');
-        $(".userInput1").css('background-color', 'lightgrey');
-    } else if (currentHour === 12) {
-        $(".userInput4").css('background-color', 'red');
-        $(".userInput3").css('background-color', 'lightgrey');
-        $(".userInput2").css('background-color', 'lightgrey');
-        $(".userInput1").css('background-color', 'rlightgrey');
-    } else if (currentHour === 13) {
-        $(".userInput5").css('background-color', 'red');
-        $(".userInput4").css('background-color', 'lightgrey');
-        $(".userInput3").css('background-color', 'lightgrey');
-        $(".userInput2").css('background-color', 'lightgrey');
-        $(".userInput1").css('background-color', 'lightgrey');
-    } else if (currentHour === 14) {
-        $(".userInput6").css('background-color', '#FF1493');
-        $(".userInput5").css('background-color', 'lightgrey');
-        $(".userInput4").css('background-color', 'lightgrey');
-        $(".userInput3").css('background-color', 'lightgrey');
-        $(".userInput2").css('background-color', 'lightgrey');
-        $(".userInput1").css('background-color', 'lightgrey');
-    } else if (currentHour === 15) {
-        $(".userInput7").css('background-color', 'red');
-        $(".userInput6").css('background-color', 'lightgrey');
-        $(".userInput5").css('background-color', 'lightgrey');
-        $(".userInput4").css('background-color', 'lightgrey');
-        $(".userInput3").css('background-color', 'lightgrey');
-        $(".userInput2").css('background-color', 'lightgrey');
-        $(".userInput1").css('background-color', 'lightgrey');
-    } else if (currentHour === 16) {
-        $(".userInput8").css('background-color', 'red');
-        $(".userInput7").css('background-color', 'lightgrey');
-        $(".userInput6").css('background-color', 'lightgrey');
-        $(".userInput5").css('background-color', 'lightgrey');
-        $(".userInput4").css('background-color', 'lightgrey');
-        $(".userInput3").css('background-color', 'lightgrey');
-        $(".userInput2").css('background-color', 'lightgrey');
-        $(".userInput1").css('background-color', 'lightgrey');
+    function timeSet() {
+
+        // for (var i=0; i < timeIdArray; i++)
+
+        if (currentHour === 9) {
+            $(".userInput1").css('background-color', '#FF1493');
+        } else if (currentHour === 10) {
+            $(".userInput2").css('background-color', 'lightgrey');
+            $(".userInput1").css('background-color', 'lightgrey');
+        } else if (currentHour === 11) {
+            $(".userInput3").css('background-color', '#FF1493');
+            $(".userInput2").css('background-color', 'lightgrey');
+            $(".userInput1").css('background-color', 'lightgrey');
+        } else if (currentHour === 12) {
+            $(".userInput4").css('background-color', '#FF1493');
+            $(".userInput3").css('background-color', 'lightgrey');
+            $(".userInput2").css('background-color', 'lightgrey');
+            $(".userInput1").css('background-color', 'rlightgrey');
+        } else if (currentHour === 13) {
+            $(".userInput5").css('background-color', '#FF1493');
+            $(".userInput4").css('background-color', 'lightgrey');
+            $(".userInput3").css('background-color', 'lightgrey');
+            $(".userInput2").css('background-color', 'lightgrey');
+            $(".userInput1").css('background-color', 'lightgrey');
+        } else if (currentHour === 14) {
+            $(".userInput6").css('background-color', '#FF1493');
+            $(".userInput5").css('background-color', 'lightgrey');
+            $(".userInput4").css('background-color', 'lightgrey');
+            $(".userInput3").css('background-color', 'lightgrey');
+            $(".userInput2").css('background-color', 'lightgrey');
+            $(".userInput1").css('background-color', 'lightgrey');
+        } else if (currentHour === 15) {
+            $(".userInput7").css('background-color', '#FF1493');
+            $(".userInput6").css('background-color', 'lightgrey');
+            $(".userInput5").css('background-color', 'lightgrey');
+            $(".userInput4").css('background-color', 'lightgrey');
+            $(".userInput3").css('background-color', 'lightgrey');
+            $(".userInput2").css('background-color', 'lightgrey');
+            $(".userInput1").css('background-color', 'lightgrey');
+        } else if (currentHour === 16) {
+            $(".userInput8").css('background-color', '#FF1493');
+            $(".userInput7").css('background-color', 'lightgrey');
+            $(".userInput6").css('background-color', 'lightgrey');
+            $(".userInput5").css('background-color', 'lightgrey');
+            $(".userInput4").css('background-color', 'lightgrey');
+            $(".userInput3").css('background-color', 'lightgrey');
+            $(".userInput2").css('background-color', 'lightgrey');
+            $(".userInput1").css('background-color', 'lightgrey');
+        }
     }
+
+    timeSet();
+
+
 
     // setActiveColor();
     var timeBox = document.querySelector("mySingleContainer");
