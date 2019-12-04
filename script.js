@@ -13,70 +13,98 @@ $(document).ready(function() {
     setInterval(updateTime, 1000);
     updateTime();
 
-    var timeIdArray = [m.format('09:00'), m.format('10:00'), m.format('11:00'), m.format('12:00'),
-        m.format('13:00'), m.format('14:00'), m.format('15:00'), m.format('16:00'), m.format('17:00')
-    ];
+    var timeIdArray = [9, 10, 11, 12, 13, 14, 15, 16];
 
-    currentHour = m.hour();
+
+
+    var currentHour = m.hour();
+
+
+    console.log(timeIdArray[6] === currentHour);
+    console.log(timeIdArray[6]);
+    console.log(currentHour);
 
     console.log(currentHour);
 
     function timeSet() {
 
-        // for (var i=0; i < timeIdArray; i++)
+        var allUserInputs = document.querySelectorAll(".userInput");
 
-        if (currentHour === 9) {
-            $(".userInput1").css('background-color', '#FF1493');
-        } else if (currentHour === 10) {
-            $(".userInput2").css('background-color', 'lightgrey');
-            $(".userInput1").css('background-color', 'lightgrey');
-        } else if (currentHour === 11) {
-            $(".userInput3").css('background-color', '#FF1493');
-            $(".userInput2").css('background-color', 'lightgrey');
-            $(".userInput1").css('background-color', 'lightgrey');
-        } else if (currentHour === 12) {
-            $(".userInput4").css('background-color', '#FF1493');
-            $(".userInput3").css('background-color', 'lightgrey');
-            $(".userInput2").css('background-color', 'lightgrey');
-            $(".userInput1").css('background-color', 'rlightgrey');
-        } else if (currentHour === 13) {
-            $(".userInput5").css('background-color', '#FF1493');
-            $(".userInput4").css('background-color', 'lightgrey');
-            $(".userInput3").css('background-color', 'lightgrey');
-            $(".userInput2").css('background-color', 'lightgrey');
-            $(".userInput1").css('background-color', 'lightgrey');
-        } else if (currentHour === 14) {
-            $(".userInput6").css('background-color', '#FF1493');
-            $(".userInput5").css('background-color', 'lightgrey');
-            $(".userInput4").css('background-color', 'lightgrey');
-            $(".userInput3").css('background-color', 'lightgrey');
-            $(".userInput2").css('background-color', 'lightgrey');
-            $(".userInput1").css('background-color', 'lightgrey');
-        } else if (currentHour === 15) {
-            $(".userInput7").css('background-color', '#FF1493');
-            $(".userInput6").css('background-color', 'lightgrey');
-            $(".userInput5").css('background-color', 'lightgrey');
-            $(".userInput4").css('background-color', 'lightgrey');
-            $(".userInput3").css('background-color', 'lightgrey');
-            $(".userInput2").css('background-color', 'lightgrey');
-            $(".userInput1").css('background-color', 'lightgrey');
-        } else if (currentHour === 16) {
-            $(".userInput8").css('background-color', '#FF1493');
-            $(".userInput7").css('background-color', 'lightgrey');
-            $(".userInput6").css('background-color', 'lightgrey');
-            $(".userInput5").css('background-color', 'lightgrey');
-            $(".userInput4").css('background-color', 'lightgrey');
-            $(".userInput3").css('background-color', 'lightgrey');
-            $(".userInput2").css('background-color', 'lightgrey');
-            $(".userInput1").css('background-color', 'lightgrey');
+        console.dir(allUserInputs);
+
+
+        for (var i = 0; i < timeIdArray.length; i++) {
+            if (currentHour === timeIdArray[i]) {
+                allUserInputs[i].setAttribute("style", "background-color: #90EE90");
+                break;
+            } else {
+                allUserInputs[i].setAttribute("style", "background-color: lightgray");
+            }
         }
+        console.log("entering function, current hour: " + currentHour);
+
     }
 
     timeSet();
 
+    // if (currentHour === 9) {
+    //     // $(".userInput1").css('background-color', '#FF1493');
+    //     $(".userInput1").toggleClass("now-bg-color ");
 
+    // } else if (currentHour === 10) {
+    //     $(".userInput2").toggleClass("now-bg-color ");
+    //     $(".userInput1").toggleClass("past-bg-color");
+    // } else if (currentHour === 11) {
+    //     $(".userInput2").toggleClass("past-bg-color");
+    //     $(".userInput3").toggleClass("now-bg-color ");
+    // } else if (currentHour === 12) {
+    //     $(".userInput3").toggleClass("past-bg-color");
+    //     $(".userInput4").toggleClass("now-bg-color ");
+    //     // $(".userInput4").css('background-color', '#FF1493');
+    //     // $(".userInput3").css('background-color', 'lightgrey');
+    //     // $(".userInput2").css('background-color', 'lightgrey');
+    //     // $(".userInput1").css('background-color', 'rlightgrey');
+    // } else if (currentHour === 13) {
+    //     $(".userInput4").toggleClass("past-bg-color");
+    //     $(".userInput5").toggleClass("now-bg-color ");
+    //     // $(".userInput5").css('background-color', '#FF1493');
+    //     // $(".userInput4").css('background-color', 'lightgrey');
+    //     // $(".userInput3").css('background-color', 'lightgrey');
+    //     // $(".userInput2").css('background-color', 'lightgrey');
+    //     // $(".userInput1").css('background-color', 'lightgrey');
+    // } else if (currentHour === 14) {
+    //     $(".userInput5").toggleClass("past-bg-color");
+    //     $(".userInput6").toggleClass("now-bg-color ");
+    //     // $(".userInput6").css('background-color', '#FF1493');
+    //     // $(".userInput5").css('background-color', 'lightgrey');
+    //     // $(".userInput4").css('background-color', 'lightgrey');
+    //     // $(".userInput3").css('background-color', 'lightgrey');
+    //     // $(".userInput2").css('background-color', 'lightgrey');
+    //     // $(".userInput1").css('background-color', 'lightgrey');
+    // } else if (currentHour === 15) {
+    //     $(".userInput6").toggleClass("past-bg-color");
+    //     $(".userInput7").toggleClass("now-bg-color ");
+    //     // $(".userInput7").css('background-color', '#FF1493');
+    //     // $(".userInput6").css('background-color', 'lightgrey');
+    //     // $(".userInput5").css('background-color', 'lightgrey');
+    //     // $(".userInput4").css('background-color', 'lightgrey');
+    //     // $(".userInput3").css('background-color', 'lightgrey');
+    //     // $(".userInput2").css('background-color', 'lightgrey');
+    //     // $(".userInput1").css('background-color', 'lightgrey');
+    // } else if (currentHour === 16) {
+    //     $(".userInput7").toggleClass("past-bg-color");
+    //     $(".userInput8").toggleClass("now-bg-color ");
+    //     // $(".userInput8").css('background-color', '#FF1493');
+    //     // $(".userInput7").css('background-color', 'lightgrey');
+    //     // $(".userInput6").css('background-color', 'lightgrey');
+    //     // $(".userInput5").css('background-color', 'lightgrey');
+    //     // $(".userInput4").css('background-color', 'lightgrey');
+    //     // $(".userInput3").css('background-color', 'lightgrey');
+    //     // $(".userInput2").css('background-color', 'lightgrey');
+    //     // $(".userInput1").css('background-color', 'lightgrey');
+    // }
 
-    // setActiveColor();
+    // selecting input boxes
     var timeBox = document.querySelector("mySingleContainer");
     var newUserInput1 = document.querySelector(".userInput1");
     var newUserInput2 = document.querySelector(".userInput2");
@@ -99,6 +127,7 @@ $(document).ready(function() {
     var lastuser8 = localStorage.getItem("userTypedBox8");
 
     // put them into each textbox
+
     newUserInput1.textContent = lastuser1;
     newUserInput2.textContent = lastuser2;
     newUserInput3.textContent = lastuser3;
