@@ -22,49 +22,49 @@ $(document).ready(function() {
     console.log(currentHour);
 
     if (currentHour === 9) {
-        $(".userInput1").css('background-color', 'green');
+        $(".userInput1").css('background-color', '#FF1493');
     } else if (currentHour === 10) {
-        $(".userInput2").css('background-color', 'green');
-        $(".userInput1").css('background-color', 'red');
+        $(".userInput2").css('background-color', 'lightgrey');
+        $(".userInput1").css('background-color', 'lightgrey');
     } else if (currentHour === 11) {
-        $(".userInput3").css('background-color', 'green');
-        $(".userInput2").css('background-color', 'red');
-        $(".userInput1").css('background-color', 'red');
+        $(".userInput3").css('background-color', '#FF1493');
+        $(".userInput2").css('background-color', 'lightgrey');
+        $(".userInput1").css('background-color', 'lightgrey');
     } else if (currentHour === 12) {
-        $(".userInput4").css('background-color', 'green');
-        $(".userInput3").css('background-color', 'red');
-        $(".userInput2").css('background-color', 'red');
-        $(".userInput1").css('background-color', 'red');
+        $(".userInput4").css('background-color', 'red');
+        $(".userInput3").css('background-color', 'lightgrey');
+        $(".userInput2").css('background-color', 'lightgrey');
+        $(".userInput1").css('background-color', 'rlightgrey');
     } else if (currentHour === 13) {
-        $(".userInput5").css('background-color', 'green');
-        $(".userInput4").css('background-color', 'red');
-        $(".userInput3").css('background-color', 'red');
-        $(".userInput2").css('background-color', 'red');
-        $(".userInput1").css('background-color', 'red');
+        $(".userInput5").css('background-color', 'red');
+        $(".userInput4").css('background-color', 'lightgrey');
+        $(".userInput3").css('background-color', 'lightgrey');
+        $(".userInput2").css('background-color', 'lightgrey');
+        $(".userInput1").css('background-color', 'lightgrey');
     } else if (currentHour === 14) {
-        $(".userInput6").css('background-color', 'green');
-        $(".userInput5").css('background-color', 'red');
-        $(".userInput4").css('background-color', 'red');
-        $(".userInput3").css('background-color', 'red');
-        $(".userInput2").css('background-color', 'red');
-        $(".userInput1").css('background-color', 'red');
+        $(".userInput6").css('background-color', '#FF1493');
+        $(".userInput5").css('background-color', 'lightgrey');
+        $(".userInput4").css('background-color', 'lightgrey');
+        $(".userInput3").css('background-color', 'lightgrey');
+        $(".userInput2").css('background-color', 'lightgrey');
+        $(".userInput1").css('background-color', 'lightgrey');
     } else if (currentHour === 15) {
-        $(".userInput7").css('background-color', 'green');
-        $(".userInput6").css('background-color', 'red');
-        $(".userInput5").css('background-color', 'red');
-        $(".userInput4").css('background-color', 'red');
-        $(".userInput3").css('background-color', 'red');
-        $(".userInput2").css('background-color', 'red');
-        $(".userInput1").css('background-color', 'red');
-    } else if (currentHour === 16) {
-        $(".userInput8").css('background-color', 'green');
         $(".userInput7").css('background-color', 'red');
-        $(".userInput6").css('background-color', 'red');
-        $(".userInput5").css('background-color', 'red');
-        $(".userInput4").css('background-color', 'red');
-        $(".userInput3").css('background-color', 'red');
-        $(".userInput2").css('background-color', 'red');
-        $(".userInput1").css('background-color', 'red');
+        $(".userInput6").css('background-color', 'lightgrey');
+        $(".userInput5").css('background-color', 'lightgrey');
+        $(".userInput4").css('background-color', 'lightgrey');
+        $(".userInput3").css('background-color', 'lightgrey');
+        $(".userInput2").css('background-color', 'lightgrey');
+        $(".userInput1").css('background-color', 'lightgrey');
+    } else if (currentHour === 16) {
+        $(".userInput8").css('background-color', 'red');
+        $(".userInput7").css('background-color', 'lightgrey');
+        $(".userInput6").css('background-color', 'lightgrey');
+        $(".userInput5").css('background-color', 'lightgrey');
+        $(".userInput4").css('background-color', 'lightgrey');
+        $(".userInput3").css('background-color', 'lightgrey');
+        $(".userInput2").css('background-color', 'lightgrey');
+        $(".userInput1").css('background-color', 'lightgrey');
     }
 
     // setActiveColor();

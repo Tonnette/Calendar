@@ -21,6 +21,11 @@ body {
     font-size: 3em;
 }
 
+.timePara {
+    font-style: oblique;
+    font-weight: 700;
+}
+
 .clockDiv {
     padding-top: 25px;
     text-align: center;
@@ -30,13 +35,13 @@ body {
 }
 
 .userInput {
-    padding: 0px;
-    background: lightgrey;
+    margin-left: 5px;
+    background: #00CED1;
 }
 
 .myClass {
     padding: 0px;
-    height: 52px;
+    height: 64px;
     border-bottom: none;
 }
 
