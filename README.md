@@ -19,7 +19,7 @@ https://tonnette.github.io/day-planner/
 https://github.com/Tonnette/day-planner
 
 # Screen Shot
-![ScreenShot](https://github.com/Tonnette/Tonnette.github.io/blob/master/DayPlanner.jpg)
+![ScreenShot](https://github.com/Tonnette/Tonnette.github.io/blob/master/DayPlanner.png)
 
 # contributors
 Tonnette Stanford
