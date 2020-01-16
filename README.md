@@ -18,10 +18,8 @@ https://tonnette.github.io/day-planner/
 # github repo
 https://github.com/Tonnette/day-planner
 
-# github repo
-<div>
-    <img src="/DayPlanner.jpg" width="400px"</> 
-</div>
+# Screen Shot
+![Main Page](https://github.com/Tonnette/day-planner/master/DayPlanner.jpg)
 
 # contributors
 Tonnette Stanford
