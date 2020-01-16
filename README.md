@@ -12,6 +12,17 @@ Each hour is colour coded to reflect whether the time slot is in the past, the p
 # Tech/framework used
 This website was built using bootstrap, html, CSS, JavaScript, JQuery and Moment.js
 
+# website
+https://tonnette.github.io/day-planner/
+
+# github repo
+https://github.com/Tonnette/day-planner
+
+# github repo
+<div>
+    <img src="/DayPlanner.jpg" width="400px"</> 
+</div>
+
 # contributors
 Tonnette Stanford
 
